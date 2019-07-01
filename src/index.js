@@ -35,7 +35,7 @@ function App() {
       <Box>
         <Text center>
           This website is licensed under the&nbsp;
-          <Link href="https://github.com/imbsky/bsky.moe/blob/master/LICENSE">
+          <Link href="https://github.com/imbsky/bsky-moe/blob/master/LICENSE">
             MIT License
           </Link>
           .
