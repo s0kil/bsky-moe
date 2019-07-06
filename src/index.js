@@ -45,4 +45,4 @@ function App() {
   )
 }
 
-render(<App className={globalStyles} />, document.body)
+render(<App class={globalStyles} />, document.body)
