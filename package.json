@@ -23,7 +23,7 @@
     "preact": "10.0.0-rc.0"
   },
   "devDependencies": {
-    "@babel/core": "7.5.4",
+    "@babel/core": "7.5.5",
     "@babel/plugin-transform-react-jsx": "7.3.0",
     "@babel/preset-env": "7.5.4",
     "autoprefixer": "9.6.1",
