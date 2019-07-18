@@ -1,4 +1,4 @@
-import { Fragment, h, render } from 'preact'
+import { Fragment, h, hydrate, render } from 'preact'
 import { Avatar } from './components/Avatar'
 import { Box } from './components/Box'
 import { Flex } from './components/Flex'
@@ -45,4 +45,10 @@ function App() {
   )
 }
 
-render(<App class={globalStyles} />, document.body)
+const rootElement = document.getElementById('root')
+
+if (rootElement.hasChildNodes()) {
+  hydrate(<App class={globalStyles} />, rootElement)
+} else {
+  render(<App class={globalStyles} />, rootElement)
+}
