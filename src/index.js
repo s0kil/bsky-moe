@@ -13,7 +13,7 @@ function App() {
       <Flex margin="50px 0" justifyContent="center">
         <Avatar
           link="https://github.com/imbsky"
-          src="https://imbsky.imgix.net/avatar.png?auto=compress&auto=format&w=512&h=512&auto=compress"
+          src="https://imbsky.imgix.net/avatar.png?auto=compress&auto=format&w=512&h=512"
         />
       </Flex>
       <Heading h3 bold center>
