@@ -6,8 +6,8 @@ const Container = styled.a`
   user-select: none;
 `
 
-export const Avatar = ({ link, src }) => (
+export const Avatar = ({ alt, link, src }) => (
   <Container href={link}>
-    <Image src={src} size="128px" />
+    <Image alt={alt} src={src} size="128px" />
   </Container>
 )

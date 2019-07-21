@@ -14,6 +14,7 @@ function App() {
       <Global styles={globalStyles} />
       <Flex margin="50px 0" justifyContent="center">
         <Avatar
+          alt="avatar"
           link="https://github.com/imbsky"
           src="https://imbsky.imgix.net/avatar.png?auto=compress&auto=format&w=512&h=512"
         />
