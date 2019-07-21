@@ -1,4 +1,4 @@
-import { styled } from 'linaria/react'
+import styled from '@emotion/styled'
 
 export const Link = styled.a`
   border-bottom: 1px solid transparent;

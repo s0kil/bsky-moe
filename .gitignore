@@ -65,6 +65,3 @@ typings/
 
 # Build output
 dist
-
-# linaria cache
-.linaria-cache

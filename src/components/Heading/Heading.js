@@ -1,4 +1,4 @@
-import { styled } from 'linaria/react'
+import styled from '@emotion/styled'
 
 const availableTags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
 

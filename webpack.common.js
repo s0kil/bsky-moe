@@ -1,7 +1,6 @@
-const path = require('path')
+const { resolve } = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const WebpackBar = require('webpackbar')
 
 module.exports = {
@@ -9,7 +8,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.[hash].js',
     chunkFilename: '[name].bundle.[chunkhash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
@@ -20,18 +19,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [
-          { loader: 'babel-loader', options: { cacheDirectory: true } },
-          { loader: 'linaria/loader' },
-        ],
-      },
-      {
-        test: /\.css$/,
-        use: [
-          { loader: MiniCssExtractPlugin.loader },
-          { loader: 'css-loader' },
-          { loader: 'postcss-loader' },
-        ],
+        use: [{ loader: 'babel-loader', options: { cacheDirectory: true } }],
       },
     ],
   },
@@ -40,7 +28,6 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({ template: 'static/index.html' }),
-    new MiniCssExtractPlugin({ filename: '[name].bundle.[hash].css' }),
     new WebpackBar({ profile: true }),
   ],
 }

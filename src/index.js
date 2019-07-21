@@ -1,3 +1,4 @@
+import { Global } from '@emotion/core'
 import { Fragment, h, hydrate, render } from 'preact'
 import { Avatar } from './components/Avatar'
 import { Box } from './components/Box'
@@ -10,6 +11,7 @@ import globalStyles from './globalStyles'
 function App() {
   return (
     <Fragment>
+      <Global styles={globalStyles} />
       <Flex margin="50px 0" justifyContent="center">
         <Avatar
           link="https://github.com/imbsky"
