@@ -1,4 +1,5 @@
 import { Global } from '@emotion/core'
+import OfflinePluginRuntime from 'offline-plugin/runtime'
 import { Fragment, h, hydrate, render } from 'preact'
 import { Avatar } from './components/Avatar'
 import { Box } from './components/Box'
@@ -7,6 +8,8 @@ import { Heading } from './components/Heading'
 import { Link } from './components/Link'
 import { Text } from './components/Text'
 import globalStyles from './globalStyles'
+
+OfflinePluginRuntime.install()
 
 function App() {
   return (
