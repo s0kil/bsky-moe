@@ -7,7 +7,12 @@ module.exports = Merge(Common, {
   mode: 'production',
   optimization: {
     minimizer: [
-      new OfflinePlugin(),
+      new OfflinePlugin({
+        externals: [
+          'https://static.bsky.moe/images/favicon.ico',
+          'https://static.bsky.moe/images/avatar.png',
+        ],
+      }),
       new TerserPlugin({ cache: true, parallel: true, extractComments: true }),
     ],
   },
