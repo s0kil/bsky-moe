@@ -10,21 +10,20 @@ import { Link } from './components/Link'
 import { Text } from './components/Text'
 import globalStyles from './globalStyles'
 
-const { Fragment } = React
+const { StrictMode } = React
 
 OfflinePluginRuntime.install()
 
-const App = () => (
-  <Fragment>
+const App: React.FC = (): JSX.Element => (
+  <StrictMode>
     <Global styles={globalStyles} />
     <Flex margin="50px 0" justifyContent="center">
       <Avatar
-        alt="avatar"
         link="https://github.com/imbsky"
         src="https://static.bsky.moe/images/avatar.png"
       />
     </Flex>
-    <Heading h3 bold center>
+    <Heading type="h3" bold center>
       BSKY
     </Heading>
     <Flex margin="25px 0" justifyContent="center">
@@ -49,13 +48,13 @@ const App = () => (
         .
       </Text>
     </Box>
-  </Fragment>
+  </StrictMode>
 )
 
-const rootElement = document.getElementById('root')
+const rootElement = document.getElementById('root') as HTMLDivElement
 
 if (rootElement.hasChildNodes()) {
-  hydrate(<App class={globalStyles} />, rootElement)
+  hydrate(<App />, rootElement)
 } else {
-  render(<App class={globalStyles} />, rootElement)
+  render(<App />, rootElement)
 }

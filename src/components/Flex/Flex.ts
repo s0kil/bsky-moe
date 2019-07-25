@@ -1,7 +1,17 @@
 import styled from '@emotion/styled'
 import { Box } from '../Box'
 
-export const Flex = styled(Box)`
+type Props = {
+  alignContent?: string
+  alignItems?: string
+  flexDirection?: string
+  flexWrap?: string
+  gap?: string
+  justifyContent?: string
+}
+
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+export const Flex = styled(Box)<Props>`
   align-content: ${({ alignContent }) => alignContent || 'stretch'};
   align-items: ${({ alignItems }) => alignItems || 'initial'};
   display: flex;
@@ -10,3 +20,4 @@ export const Flex = styled(Box)`
   gap: ${({ gap }) => gap || 'initial'};
   justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
 `
+/* eslint-enable @typescript-eslint/explicit-function-return-type */

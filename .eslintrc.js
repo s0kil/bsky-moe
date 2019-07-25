@@ -1,11 +1,20 @@
+const { resolve } = require('path')
+
 const OFF = 0
 const ERROR = 2
 
 module.exports = {
-  parser: 'babel-eslint',
   env: { browser: true },
-  extends: ['airbnb', 'prettier', 'prettier/react'],
-  plugins: ['emotion', 'prettier'],
+  parser: '@typescript-eslint/parser',
+  parserOptions: { project: resolve(__dirname, 'tsconfig.json') },
+  extends: [
+    'airbnb',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'prettier/react',
+    'prettier/@typescript-eslint',
+  ],
+  plugins: ['@typescript-eslint', 'emotion', 'prettier'],
   rules: {
     'prettier/prettier': ERROR,
     'react/jsx-filename-extension': OFF,
@@ -16,5 +25,10 @@ module.exports = {
     'emotion/styled-import': ERROR,
     'import/prefer-default-export': OFF,
     'import/no-extraneous-dependencies': OFF,
+    '@typescript-eslint/prefer-interface': OFF,
+  },
+  settings: {
+    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import/resolver': { node: { extensions: ['.js', '.jsx', '.ts', '.tsx'] } },
   },
 }
