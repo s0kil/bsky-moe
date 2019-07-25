@@ -17,5 +17,4 @@ module.exports = {
     'import/prefer-default-export': OFF,
     'import/no-extraneous-dependencies': OFF,
   },
-  settings: { react: { pragma: 'h' } },
 }

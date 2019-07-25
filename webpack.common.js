@@ -23,11 +23,10 @@ module.exports = {
       },
     ],
   },
-  resolve: { alias: { react: 'preact/compat', 'react-dom': 'preact/compat' } },
   optimization: { splitChunks: { name: 'vendor', chunks: 'initial' } },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({ template: 'static/index.html' }),
-    new WebpackBar({ profile: true }),
+    new WebpackBar(),
   ],
 }

@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { h } from 'preact'
+import React from 'react'
 import { Image } from './Image'
 
 const Container = styled.a`

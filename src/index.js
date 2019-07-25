@@ -1,6 +1,7 @@
 import { Global } from '@emotion/core'
 import OfflinePluginRuntime from 'offline-plugin/runtime'
-import { Fragment, h, hydrate, render } from 'preact'
+import React from 'react'
+import { hydrate, render } from 'react-dom'
 import { Avatar } from './components/Avatar'
 import { Box } from './components/Box'
 import { Flex } from './components/Flex'
@@ -8,6 +9,8 @@ import { Heading } from './components/Heading'
 import { Link } from './components/Link'
 import { Text } from './components/Text'
 import globalStyles from './globalStyles'
+
+const { Fragment } = React
 
 OfflinePluginRuntime.install()
 

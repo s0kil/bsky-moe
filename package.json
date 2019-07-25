@@ -24,12 +24,13 @@
     "@emotion/core": "10.0.14",
     "@emotion/styled": "10.0.14",
     "polished": "3.4.1",
-    "preact": "10.0.0-rc.0"
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
-    "@babel/plugin-transform-react-jsx": "7.3.0",
     "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
     "babel-eslint": "10.0.2",
     "babel-loader": "8.0.6",
     "babel-plugin-emotion": "10.0.14",
