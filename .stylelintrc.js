@@ -1,5 +1,4 @@
 const ON = true
-const OFF = null
 
 module.exports = {
   processors: ['stylelint-processor-styled-components'],
