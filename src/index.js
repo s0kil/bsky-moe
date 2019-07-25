@@ -18,7 +18,7 @@ const App = () => (
       <Avatar
         alt="avatar"
         link="https://github.com/imbsky"
-        src="https://imbsky.imgix.net/avatar.png?auto=compress&auto=format&w=512&h=512"
+        src="https://static.bsky.moe/images/avatar.png"
       />
     </Flex>
     <Heading h3 bold center>
