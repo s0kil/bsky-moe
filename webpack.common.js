@@ -7,7 +7,7 @@ const WebpackBar = require('webpackbar')
 module.exports = {
   entry: './src/index.tsx',
   output: {
-    filename: '[name].bundle.[hash].js',
+    filename: 'bundle.[hash].js',
     chunkFilename: '[name].bundle.[chunkhash].js',
     path: resolve(__dirname, 'dist'),
   },
