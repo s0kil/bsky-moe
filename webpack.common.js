@@ -24,7 +24,7 @@ module.exports = {
       },
     ],
   },
-  resolve: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+  resolve: { extensions: ['.js', '.ts', '.tsx'] },
   optimization: { splitChunks: { name: 'vendor', chunks: 'initial' } },
   plugins: [
     new CleanWebpackPlugin(),

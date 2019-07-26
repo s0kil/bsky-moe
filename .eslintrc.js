@@ -28,7 +28,7 @@ module.exports = {
     '@typescript-eslint/prefer-interface': OFF,
   },
   settings: {
-    'import/extensions': ['.js', '.jsx', '.ts', '.tsx'],
-    'import/resolver': { node: { extensions: ['.js', '.jsx', '.ts', '.tsx'] } },
+    'import/extensions': ['.js', '.ts', '.tsx'],
+    'import/resolver': { node: { extensions: ['.js', '.ts', '.tsx'] } },
   },
 }

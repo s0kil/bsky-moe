@@ -1,1 +1,3 @@
-module.exports = { '*.js': ['eslint --fix', 'stylelint --fix', 'git add'] }
+module.exports = {
+  '*.{js,ts,tsx}': ['eslint --fix', 'stylelint --fix', 'git add'],
+}
