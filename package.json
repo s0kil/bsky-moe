@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "lint:js": "eslint . --ext tsx,ts,js",
-    "lint:css": "stylelint '**/*.js'",
+    "lint:js": "eslint . --ext js,ts,tsx",
+    "lint:css": "stylelint '**/*.{js,ts,tsx}'",
     "lint": "npm-run-all -p lint:*",
     "tsc": "tsc",
     "fmt:js": "prettier --write '**/*.js'",
