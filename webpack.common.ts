@@ -1,10 +1,10 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { resolve } = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const HtmlWebPackPlugin = require('html-webpack-plugin')
-const WebpackBar = require('webpackbar')
+import { CleanWebpackPlugin } from 'clean-webpack-plugin'
+import HtmlWebPackPlugin from 'html-webpack-plugin'
+import { resolve } from 'path'
+import webpack from 'webpack'
+import WebpackBar from 'webpackbar'
 
-module.exports = {
+const config: webpack.Configuration = {
   entry: './src/index.tsx',
   output: {
     filename: 'bundle.[hash].js',
@@ -32,3 +32,5 @@ module.exports = {
     new WebpackBar(),
   ],
 }
+
+export default config

@@ -1,10 +1,10 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const Merge = require('webpack-merge')
-const OfflinePlugin = require('offline-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
-const Common = require('./webpack.common.js')
+import OfflinePlugin from 'offline-plugin'
+import TerserPlugin from 'terser-webpack-plugin'
+import webpack from 'webpack'
+import Merge from 'webpack-merge'
+import Common from './webpack.common'
 
-module.exports = Merge(Common, {
+const config: webpack.Configuration = Merge(Common, {
   mode: 'production',
   optimization: {
     minimizer: [
@@ -19,3 +19,5 @@ module.exports = Merge(Common, {
   },
   stats: 'errors-only',
 })
+
+export default config
