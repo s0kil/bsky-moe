@@ -1,12 +1,26 @@
 import styled from '@emotion/styled'
 
 type Props = {
-  type: string
+  h1?: boolean
+  h2?: boolean
+  h3?: boolean
+  h4?: boolean
+  h5?: boolean
+  h6?: boolean
   bold?: boolean
   center?: boolean
 }
 
-const switchFontSize = (type: string): string => {
+const availableTags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+
+const createType = (props: object): string =>
+  Object.keys(props).filter((tag: string): boolean =>
+    availableTags.includes(tag),
+  )[0]
+
+const switchFontSize = (props: object): string => {
+  const type = createType(props)
+
   switch (type) {
     case 'h1':
       return '2em'
@@ -27,7 +41,7 @@ const switchFontSize = (type: string): string => {
 
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 export const Heading = styled.p<Props>`
-  font-size: ${({ type }) => switchFontSize(type)};
+  font-size: ${props => switchFontSize(props)};
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
   text-align: ${({ center }) => (center ? 'center' : 'initial')};
 `

@@ -23,7 +23,7 @@ const App: React.FC = (): JSX.Element => (
         src="https://static.bsky.moe/images/avatar.png"
       />
     </Flex>
-    <Heading type="h3" bold center>
+    <Heading h3 bold center>
       BSKY
     </Heading>
     <Flex margin="25px 0" justifyContent="center">
