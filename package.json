@@ -4,6 +4,7 @@
     "lint:js": "eslint . --ext tsx,ts,js",
     "lint:css": "stylelint '**/*.js'",
     "lint": "npm-run-all -p lint:*",
+    "tsc": "tsc",
     "fmt:js": "prettier --write '**/*.js'",
     "fmt:json": "prettier --write '**/*.json'",
     "fmt:yml": "prettier --write '**/*.{yaml,yml}'",
