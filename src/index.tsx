@@ -1,5 +1,5 @@
 import { Global } from '@emotion/core'
-import OfflinePluginRuntime from 'offline-plugin/runtime'
+import { install as installOffline } from 'offline-plugin/runtime'
 import React from 'react'
 import { hydrate, render } from 'react-dom'
 import { Avatar } from './components/Avatar'
@@ -12,7 +12,7 @@ import globalStyles from './globalStyles'
 
 const { StrictMode } = React
 
-OfflinePluginRuntime.install()
+installOffline()
 
 const App: React.FC = (): JSX.Element => (
   <StrictMode>
