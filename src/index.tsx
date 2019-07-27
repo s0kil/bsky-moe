@@ -8,7 +8,7 @@ import { Flex } from './components/Flex'
 import { Heading } from './components/Heading'
 import { Link } from './components/Link'
 import { Text } from './components/Text'
-import globalStyles from './globalStyles'
+import { globalStyles } from './globalStyles'
 
 installOffline()
 

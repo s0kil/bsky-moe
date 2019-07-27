@@ -1,7 +1,7 @@
 import { css } from '@emotion/core'
 import { normalize } from 'polished'
 
-const globalStyles = css`
+export const globalStyles = css`
   ${normalize()}
   * {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -10,5 +10,3 @@ const globalStyles = css`
     -moz-osx-font-smoothing: grayscale;
   }
 `
-
-export default globalStyles
