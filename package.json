@@ -15,8 +15,8 @@
     "check:fmt:yml": "prettier --check '**/*.{yaml,yml}'",
     "check:fmt:md": "prettier --check '**/*.md'",
     "check:fmt": "npm-run-all -p check:fmt:*",
-    "dev": "cross-env TS_NODE_PROJECT='webpack.tsconfig.json' webpack-dev-server --config webpack.dev.ts",
-    "build": "cross-env TS_NODE_PROJECT='webpack.tsconfig.json' webpack --config webpack.prod.ts && react-snap"
+    "dev": "cross-env NODE_ENV=development TS_NODE_PROJECT='webpack.tsconfig.json' webpack-dev-server --config webpack.dev.ts",
+    "build": "cross-env NODE_ENV=production TS_NODE_PROJECT='webpack.tsconfig.json' webpack --config webpack.prod.ts && react-snap"
   },
   "reactSnap": {
     "source": "dist"
