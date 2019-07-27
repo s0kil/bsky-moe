@@ -7,12 +7,10 @@ type Props = {
   width?: string
 }
 
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 export const Box = styled.div<Props>`
   box-sizing: border-box;
-  height: ${({ height }) => height || 'auto'};
-  margin: ${({ margin }) => margin || '0'};
-  padding: ${({ padding }) => padding || '0'};
-  width: ${({ width }) => width || 'auto'};
+  height: ${({ height }): string => height || 'auto'};
+  margin: ${({ margin }): string => margin || '0'};
+  padding: ${({ padding }): string => padding || '0'};
+  width: ${({ width }): string => width || 'auto'};
 `
-/* eslint-enable @typescript-eslint/explicit-function-return-type */

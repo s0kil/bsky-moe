@@ -39,10 +39,8 @@ const switchFontSize = (props: object): string => {
   }
 }
 
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 export const Heading = styled.p<Props>`
-  font-size: ${props => switchFontSize(props)};
-  font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
-  text-align: ${({ center }) => (center ? 'center' : 'initial')};
+  font-size: ${(props): string => switchFontSize(props)};
+  font-weight: ${({ bold }): string => (bold ? 'bold' : 'normal')};
+  text-align: ${({ center }): string => (center ? 'center' : 'initial')};
 `
-/* eslint-enable @typescript-eslint/explicit-function-return-type */

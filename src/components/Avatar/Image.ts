@@ -4,10 +4,8 @@ type Props = {
   size: string
 }
 
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 export const Image = styled.img<Props>`
   border-radius: 50%;
-  height: ${({ size }) => size};
-  width: ${({ size }) => size};
+  height: ${({ size }): string => size};
+  width: ${({ size }): string => size};
 `
-/* eslint-enable @typescript-eslint/explicit-function-return-type */

@@ -10,14 +10,13 @@ type Props = {
   justifyContent?: string
 }
 
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
 export const Flex = styled(Box)<Props>`
-  align-content: ${({ alignContent }) => alignContent || 'stretch'};
-  align-items: ${({ alignItems }) => alignItems || 'initial'};
+  align-content: ${({ alignContent }): string => alignContent || 'stretch'};
+  align-items: ${({ alignItems }): string => alignItems || 'initial'};
   display: flex;
-  flex-direction: ${({ flexDirection }) => flexDirection || 'row'};
-  flex-wrap: ${({ flexWrap }) => flexWrap || 'nowrap'};
-  gap: ${({ gap }) => gap || 'initial'};
-  justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
+  flex-direction: ${({ flexDirection }): string => flexDirection || 'row'};
+  flex-wrap: ${({ flexWrap }): string => flexWrap || 'nowrap'};
+  gap: ${({ gap }): string => gap || 'initial'};
+  justify-content: ${({ justifyContent }): string =>
+    justifyContent || 'flex-start'};
 `
-/* eslint-enable @typescript-eslint/explicit-function-return-type */
