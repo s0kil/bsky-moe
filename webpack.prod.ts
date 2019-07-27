@@ -1,10 +1,10 @@
 import OfflinePlugin from 'offline-plugin'
 import TerserPlugin from 'terser-webpack-plugin'
 import webpack from 'webpack'
-import Merge from 'webpack-merge'
-import Common from './webpack.common'
+import merge from 'webpack-merge'
+import common from './webpack.common'
 
-const config: webpack.Configuration = Merge(Common, {
+const config: webpack.Configuration = merge(common, {
   mode: 'production',
   optimization: {
     minimizer: [
