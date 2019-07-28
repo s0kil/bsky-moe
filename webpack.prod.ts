@@ -8,12 +8,7 @@ const config: webpack.Configuration = merge(common, {
   mode: 'production',
   optimization: {
     minimizer: [
-      new OfflinePlugin({
-        externals: [
-          'https://static.bsky.moe/images/favicon.ico',
-          'https://static.bsky.moe/images/avatar.png',
-        ],
-      }),
+      new OfflinePlugin(),
       new TerserPlugin({ cache: true, parallel: true, extractComments: true }),
     ],
   },
