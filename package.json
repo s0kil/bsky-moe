@@ -15,7 +15,7 @@
     "source": "dist"
   },
   "dependencies": {
-    "@emotion/core": "10.0.14",
+    "@emotion/core": "10.0.15",
     "@emotion/styled": "10.0.14",
     "polished": "3.4.1",
     "react": "16.8.6",
