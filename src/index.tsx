@@ -41,7 +41,7 @@ const App: React.FC = (): JSX.Element => (
       <Text center>
         This website is licensed under the&nbsp;
         <Link href="https://github.com/imbsky/bsky-moe/blob/master/LICENSE">
-          MIT License
+          Apache License 2.0
         </Link>
         .
       </Text>
