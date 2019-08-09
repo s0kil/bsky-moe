@@ -6,10 +6,10 @@
     "lint:css": "stylelint '**/*.{js,ts,tsx}'",
     "lint": "npm-run-all -p lint:*",
     "tsc": "tsc",
-    "prettier:ci": "prettier --check '**/*.{css,less,scss,graphql|gql,html,js,jsx,json,md,markdown,mdown,mkdn,mdx,ts,tsx,vue,yaml,yml}'",
-    "prettier": "prettier --write '**/*.{css,less,scss,graphql|gql,html,js,jsx,json,md,markdown,mdown,mkdn,mdx,ts,tsx,vue,yaml,yml}'",
+    "prettier:ci": "prettier --check '**/*.{html,js,json,md,ts,tsx,yml}'",
+    "prettier": "prettier --write '**/*.{html,js,json,md,ts,tsx,yml}'",
     "dev": "cross-env NODE_ENV=development TS_NODE_PROJECT='webpack.tsconfig.json' webpack-dev-server --config webpack.dev.ts",
-    "build": "cross-env NODE_ENV=production TS_NODE_PROJECT='webpack.tsconfig.json' webpack --config webpack.prod.ts && react-snap && yarn size"
+    "build": "cross-env NODE_ENV=production TS_NODE_PROJECT='webpack.tsconfig.json' webpack --config webpack.prod.ts && react-snap && npm run size"
   },
   "reactSnap": {
     "source": "dist"
