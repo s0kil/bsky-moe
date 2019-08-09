@@ -19,7 +19,7 @@
     "@emotion/styled": "10.0.15",
     "polished": "3.4.1",
     "react": "16.9.0",
-    "react-dom": "16.8.6"
+    "react-dom": "16.9.0"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
