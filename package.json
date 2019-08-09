@@ -18,7 +18,7 @@
     "@emotion/core": "10.0.15",
     "@emotion/styled": "10.0.15",
     "polished": "3.4.1",
-    "react": "16.8.6",
+    "react": "16.9.0",
     "react-dom": "16.8.6"
   },
   "devDependencies": {
