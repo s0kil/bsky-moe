@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "size": "bundlesize --config bundlesize.config.json",
-    "lint:js": "eslint . --ext js,ts,tsx",
-    "lint:css": "stylelint '**/*.{js,ts,tsx}'",
+    "lint:js": "eslint '**/*.{js,ts,tsx}' --cache",
+    "lint:css": "stylelint '**/*.{js,ts,tsx}' --cache",
     "lint": "npm-run-all -p lint:*",
     "tsc": "tsc",
     "prettier:ci": "prettier --check '**/*.{html,js,json,md,ts,tsx,yml}'",
