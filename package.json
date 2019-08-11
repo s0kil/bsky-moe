@@ -9,7 +9,7 @@
     "prettier:ci": "prettier --check '**/*.{html,js,json,md,ts,tsx,yml}'",
     "prettier": "prettier --write '**/*.{html,js,json,md,ts,tsx,yml}'",
     "dev": "cross-env NODE_ENV=development TS_NODE_PROJECT='webpack.tsconfig.json' webpack-dev-server --config webpack.dev.ts",
-    "build": "cross-env NODE_ENV=production TS_NODE_PROJECT='webpack.tsconfig.json' webpack --config webpack.prod.ts && react-snap && npm run size"
+    "build": "cross-env NODE_ENV=production TS_NODE_PROJECT='webpack.tsconfig.json' webpack --config webpack.prod.ts && react-snap && yarn size"
   },
   "reactSnap": {
     "source": "dist"
