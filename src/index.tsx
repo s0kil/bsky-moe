@@ -13,7 +13,6 @@
 // limitations under the License.
 
 import { Global } from '@emotion/core'
-import { install as installOffline } from 'offline-plugin/runtime'
 import React, { StrictMode } from 'react'
 import { hydrate, render } from 'react-dom'
 import { Avatar } from './components/Avatar'
@@ -23,8 +22,6 @@ import { Heading } from './components/Heading'
 import { Link } from './components/Link'
 import { Text } from './components/Text'
 import { globalStyles } from './globalStyles'
-
-installOffline()
 
 const App: React.FC = (): JSX.Element => (
   <StrictMode>
