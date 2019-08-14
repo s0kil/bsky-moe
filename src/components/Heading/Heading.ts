@@ -27,12 +27,12 @@ type Props = {
 
 const availableTags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
 
-const createType = (props: object): string =>
+const createType = (props: Props): string =>
   Object.keys(props).filter((tag: string): boolean =>
     availableTags.includes(tag),
   )[0]
 
-const switchFontSize = (props: object): string => {
+const switchFontSize = (props: Props): string => {
   const type = createType(props)
 
   switch (type) {
