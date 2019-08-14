@@ -29,7 +29,7 @@ const App: React.FC = (): JSX.Element => (
     <Flex margin="50px 0" justifyContent="center">
       <Avatar
         link="https://github.com/imbsky"
-        src="https://static.bsky.moe/images/avatar.png"
+        src="https://www.gravatar.com/avatar/77ba9b23d10139187d11b3795c7a9164?s=256"
       />
     </Flex>
     <Heading h3 bold center>
