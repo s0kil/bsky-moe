@@ -1,16 +1,10 @@
-const { resolve } = require('path')
-
 const OFF = 0
 const ERROR = 2
 
 module.exports = {
   env: { browser: true, node: true },
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 2019,
-    sourceType: 'module',
-    project: resolve(__dirname, 'tsconfig.json'),
-  },
+  parserOptions: { ecmaVersion: 2019, sourceType: 'module' },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
@@ -30,7 +24,6 @@ module.exports = {
     'emotion/no-vanilla': ERROR,
     'emotion/import-from-emotion': ERROR,
     'emotion/styled-import': ERROR,
-    '@typescript-eslint/prefer-interface': OFF,
   },
   settings: {
     react: { version: '16' },
