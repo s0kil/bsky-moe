@@ -27,6 +27,6 @@ const Container = styled.a`
 
 export const Avatar: React.FC<Props> = ({ link, src }): JSX.Element => (
   <Container href={link}>
-    <Image alt="avatar" src={src} size="128px" />
+    <Image alt="Avatar image" src={src} size="128px" />
   </Container>
 )
