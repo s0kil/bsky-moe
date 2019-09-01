@@ -15,6 +15,7 @@
 import styled from '@emotion/styled'
 
 type Props = {
+  as?: string
   h1?: boolean
   h2?: boolean
   h3?: boolean

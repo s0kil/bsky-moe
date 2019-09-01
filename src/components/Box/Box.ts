@@ -15,6 +15,7 @@
 import styled from '@emotion/styled'
 
 type Props = {
+  as?: string
   height?: string
   margin?: string
   padding?: string
