@@ -41,12 +41,14 @@ const App: React.FC = (): JSX.Element => (
         <Flex margin="25px 0" justifyContent="center">
           <Box maxWidth="960px">
             <Text center>
-              Just a guy who likes learning about various things. In my former
-              days, I did video (2D and 3D, dynamic effects, simulations) and
-              music production for more than five years, so I&apos;m a little
-              bit knowledgeable in that field, too. On days off I enjoy driving
-              my car and riding my motorcycle. If you have any questions, please
-              email me anytime.
+              Young self-taught software engineer with&nbsp;
+              {new Date().getFullYear() - 2017}+ years of industry experience. I
+              acting like an architect to keep the code maintainable. But I
+              maintain a healthy balance between perfectionism and actually
+              getting stuff done. In my former days, I did video (2D and 3D,
+              dynamic effects, simulations) and music production for more than
+              five years, so I&apos;m a little bit knowledgeable in that field,
+              too. If you have any questions, please email me anytime.
             </Text>
           </Box>
         </Flex>
