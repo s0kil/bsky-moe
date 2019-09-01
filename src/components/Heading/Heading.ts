@@ -38,19 +38,19 @@ const switchFontSize = (props: Props): string => {
 
   switch (type) {
     case 'h1':
-      return '2em'
+      return '2rem'
     case 'h2':
-      return '1.5em'
+      return '1.5rem'
     case 'h3':
-      return '1.3em'
+      return '1.3rem'
     case 'h4':
-      return '1em'
+      return '1rem'
     case 'h5':
-      return '0.8em'
+      return '0.8rem'
     case 'h6':
-      return '0.7em'
+      return '0.7rem'
     default:
-      return '1em'
+      return '1rem'
   }
 }
 
