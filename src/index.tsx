@@ -46,9 +46,10 @@ const App: React.FC = (): JSX.Element => (
               acting like an architect to keep the code maintainable. But I
               maintain a healthy balance between perfectionism and actually
               getting stuff done. In my former days, I did video (2D and 3D,
-              dynamic effects, simulations) and music production for more than
-              five years, so I&apos;m a little bit knowledgeable in that field,
-              too. If you have any questions, please email me anytime.
+              dynamic effects, simulations) and music production for&nbsp;
+              {new Date().getFullYear() - 2014}+ years, so I&apos;m a little bit
+              knowledgeable in that field, too. If you have any questions,
+              please email me anytime.
             </Text>
           </Box>
         </Flex>
