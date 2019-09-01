@@ -14,7 +14,8 @@
 
 import { Global } from '@emotion/core'
 import React, { StrictMode } from 'react'
-import { hydrate, render } from 'react-dom'
+import axe from 'react-axe'
+import ReactDOM, { hydrate, render } from 'react-dom'
 import { Avatar } from './components/Avatar'
 import { Box } from './components/Box'
 import { Flex } from './components/Flex'
@@ -61,6 +62,10 @@ const App: React.FC = (): JSX.Element => (
 )
 
 const rootElement = document.getElementById('root') as HTMLDivElement
+
+if (process.env.NODE_ENV !== 'production') {
+  axe(React, ReactDOM, 1000)
+}
 
 if (rootElement.hasChildNodes()) {
   hydrate(<App />, rootElement)
