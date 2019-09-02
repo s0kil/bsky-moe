@@ -15,5 +15,5 @@ export const onRender: ProfilerOnRenderCallback = (
   console.info('Base Duration:', baseDuration)
   console.info('Start Time:', startTime)
   console.info('Commit Time:', commitTime)
-  console.info('Inter Actions:', interactions)
+  console.info('Interaction:', interactions)
 }
