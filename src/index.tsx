@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import { Global } from '@emotion/core'
-import React, { StrictMode } from 'react'
+import React, { Profiler, StrictMode } from 'react'
 import axe from 'react-axe'
 import ReactDOM, { hydrate, render } from 'react-dom'
 import { Avatar } from './components/Avatar'
@@ -23,47 +23,50 @@ import { Heading } from './components/Heading'
 import { Link } from './components/Link'
 import { Text } from './components/Text'
 import { globalStyles } from './globalStyles'
+import { onRender } from './utils/onRender'
 
 const App: React.FC = (): JSX.Element => (
   <StrictMode>
-    <Global styles={globalStyles} />
-    <Box margin="0 1rem">
-      <Box as="main" role="main">
-        <Flex margin="50px 0" justifyContent="center">
-          <Avatar
-            link="https://github.com/imbsky"
-            src="https://www.gravatar.com/avatar/77ba9b23d10139187d11b3795c7a9164?s=256"
-          />
-        </Flex>
-        <Heading as="h3" h3 bold center>
-          BSKY
-        </Heading>
-        <Flex margin="25px 0" justifyContent="center">
-          <Box maxWidth="960px">
-            <Text center>
-              Young self-taught software engineer with&nbsp;
-              {new Date().getFullYear() - 2017}+ years of industry experience. I
-              acting like an architect to keep the code maintainable. But I
-              maintain a healthy balance between perfectionism and actually
-              getting stuff done. In my former days, I did video (2D and 3D,
-              dynamic effects, simulations) and music production for&nbsp;
-              {new Date().getFullYear() - 2014}+ years, so I&apos;m a little bit
-              knowledgeable in that field, too. If you have any questions,
-              please email me anytime.
-            </Text>
-          </Box>
-        </Flex>
+    <Profiler id="root" onRender={onRender}>
+      <Global styles={globalStyles} />
+      <Box margin="0 1rem">
+        <Box as="main" role="main">
+          <Flex margin="50px 0" justifyContent="center">
+            <Avatar
+              link="https://github.com/imbsky"
+              src="https://www.gravatar.com/avatar/77ba9b23d10139187d11b3795c7a9164?s=256"
+            />
+          </Flex>
+          <Heading as="h3" h3 bold center>
+            BSKY
+          </Heading>
+          <Flex margin="25px 0" justifyContent="center">
+            <Box maxWidth="960px">
+              <Text center>
+                Young self-taught software engineer with&nbsp;
+                {new Date().getFullYear() - 2017}+ years of industry experience.
+                I acting like an architect to keep the code maintainable. But I
+                maintain a healthy balance between perfectionism and actually
+                getting stuff done. In my former days, I did video (2D and 3D,
+                dynamic effects, simulations) and music production for&nbsp;
+                {new Date().getFullYear() - 2014}+ years, so I&apos;m a little
+                bit knowledgeable in that field, too. If you have any questions,
+                please email me anytime.
+              </Text>
+            </Box>
+          </Flex>
+        </Box>
+        <Box as="footer" role="contentinfo">
+          <Text center>
+            This website is licensed under the&nbsp;
+            <Link href="https://github.com/imbsky/bsky-moe/blob/master/LICENSE">
+              Apache License 2.0
+            </Link>
+            .
+          </Text>
+        </Box>
       </Box>
-      <Box as="footer" role="contentinfo">
-        <Text center>
-          This website is licensed under the&nbsp;
-          <Link href="https://github.com/imbsky/bsky-moe/blob/master/LICENSE">
-            Apache License 2.0
-          </Link>
-          .
-        </Text>
-      </Box>
-    </Box>
+    </Profiler>
   </StrictMode>
 )
 
