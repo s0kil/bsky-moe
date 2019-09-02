@@ -1,6 +1,7 @@
 import { CleanWebpackPlugin } from 'clean-webpack-plugin'
 import HtmlWebPackPlugin from 'html-webpack-plugin'
 import { resolve } from 'path'
+import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin'
 import webpack from 'webpack'
 import WebpackBar from 'webpackbar'
 
@@ -29,6 +30,7 @@ const config: webpack.Configuration = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({ template: 'static/index.html' }),
+    new ScriptExtHtmlWebpackPlugin({ defaultAttribute: 'async' }),
     new WebpackBar(),
   ],
 }
