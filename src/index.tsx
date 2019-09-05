@@ -43,15 +43,20 @@ const App: React.FC = (): JSX.Element => (
           <Flex margin="25px 0" justifyContent="center">
             <Box maxWidth="960px">
               <Text center>
-                Young self-taught software engineer with&nbsp;
-                {new Date().getFullYear() - 2017}+ years of industry experience.
-                I acting like an architect to keep the code maintainable. But I
-                maintain a healthy balance between perfectionism and actually
-                getting stuff done. In my former days, I did video (2D and 3D,
-                dynamic effects, simulations) and music production for&nbsp;
-                {new Date().getFullYear() - 2014}+ years, so I&apos;m a little
-                bit knowledgeable in that field, too. If you have any questions,
-                please email me anytime.
+                A young self-taught software engineer with&nbsp;
+                {new Date().getFullYear() - 2017}+ years of industry experience
+                and as a hidden fact, I&apos;m a motorsports enthusiast.
+                I&apos;m acting like an architect to keep the code maintainable.
+                But I maintain a healthy balance between perfectionism and
+                actually getting stuff done. In other words, I focus on results
+                over process. And I have a cursory knowledge of functional
+                programming paradigms, runtime performance optimizations,
+                improving development experience with the modern tooling, and
+                refactoring code into modules, etc. I also have&nbsp;
+                {new Date().getFullYear() - 2014}+ years of experience in video
+                and music production, so I&apos;m a little bit knowledgeable in
+                that field, too. If you have any questions, please email me at
+                any time.
               </Text>
             </Box>
           </Flex>
