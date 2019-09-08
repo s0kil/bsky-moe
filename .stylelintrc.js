@@ -1,9 +1,9 @@
 const ON = true
 
 module.exports = {
-  processors: ['stylelint-processor-styled-components'],
+  styntax: 'css-in-js',
   extends: [
-    'stylelint-config-standard',
+    'stylelint-config-recommended',
     'stylelint-config-styled-components',
     'stylelint-config-prettier',
   ],
