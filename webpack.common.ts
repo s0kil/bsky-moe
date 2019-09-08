@@ -4,6 +4,7 @@ import { resolve } from 'path'
 import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin'
 import webpack from 'webpack'
 import WebpackBar from 'webpackbar'
+import { extensions } from './constants'
 
 const config: webpack.Configuration = {
   entry: './src/index.tsx',
@@ -25,7 +26,7 @@ const config: webpack.Configuration = {
       },
     ],
   },
-  resolve: { extensions: ['.js', '.ts', '.tsx'] },
+  resolve: { extensions },
   optimization: { splitChunks: { name: 'vendor', chunks: 'initial' } },
   plugins: [
     new CleanWebpackPlugin(),

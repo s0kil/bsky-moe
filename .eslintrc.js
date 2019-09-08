@@ -1,3 +1,5 @@
+const { extensions } = require('./constants')
+
 const OFF = 0
 const ERROR = 2
 
@@ -27,7 +29,7 @@ module.exports = {
   },
   settings: {
     react: { version: 'detect' },
-    'import/extensions': ['.js', '.ts', '.tsx'],
-    'import/resolver': { node: { extensions: ['.js', '.ts', '.tsx'] } },
+    'import/extensions': extensions,
+    'import/resolver': { node: { extensions } },
   },
 }
