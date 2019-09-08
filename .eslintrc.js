@@ -4,7 +4,7 @@ const ERROR = 2
 module.exports = {
   env: { browser: true, node: true },
   parser: '@typescript-eslint/parser',
-  parserOptions: { ecmaVersion: 2019, sourceType: 'module' },
+  parserOptions: { ecmaVersion: 2020, sourceType: 'module' },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
@@ -26,7 +26,7 @@ module.exports = {
     'emotion/styled-import': ERROR,
   },
   settings: {
-    react: { version: '16' },
+    react: { version: 'detect' },
     'import/extensions': ['.js', '.ts', '.tsx'],
     'import/resolver': { node: { extensions: ['.js', '.ts', '.tsx'] } },
   },
