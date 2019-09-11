@@ -68,7 +68,3 @@ typings/
 
 # Build output
 dist
-
-# These cause more harm than good
-package-lock.json
-yarn.lock
