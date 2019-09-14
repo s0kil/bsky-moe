@@ -44,7 +44,7 @@
     "clean-webpack-plugin": "3.0.0",
     "core-js": "3.2.1",
     "cross-env": "5.2.1",
-    "eslint": "6.3.0",
+    "eslint": "6.4.0",
     "eslint-config-prettier": "6.3.0",
     "eslint-plugin-emotion": "10.0.14",
     "eslint-plugin-import": "2.18.2",
