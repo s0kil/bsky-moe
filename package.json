@@ -29,7 +29,7 @@
     "@types/html-webpack-plugin": "3.2.1",
     "@types/react": "16.9.3",
     "@types/react-axe": "3.1.0",
-    "@types/react-dom": "16.9.0",
+    "@types/react-dom": "16.9.1",
     "@types/script-ext-html-webpack-plugin": "2.1.1",
     "@types/terser-webpack-plugin": "1.2.1",
     "@types/webpack": "4.39.1",
