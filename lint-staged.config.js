@@ -1,3 +1,3 @@
 module.exports = {
-  '*.{js,ts,tsx}': ['eslint --cache', 'stylelint --cache', 'git add'],
+  '*.{js,ts}': ['eslint --cache', 'git add'],
 }

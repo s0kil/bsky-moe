@@ -4,10 +4,9 @@ import { resolve } from 'path'
 import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin'
 import webpack from 'webpack'
 import WebpackBar from 'webpackbar'
-import { extensions } from './constants'
 
 const config: webpack.Configuration = {
-  entry: './src/index.tsx',
+  entry: './lib/es6/src/Index.js',
   output: {
     filename: 'bundle.[hash].js',
     chunkFilename: '[name].bundle.[chunkhash].js',
@@ -20,13 +19,16 @@ const config: webpack.Configuration = {
         use: [{ loader: 'html-loader', options: { minimize: true } }],
       },
       {
-        test: /\.(ts|tsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         use: [{ loader: 'babel-loader', options: { cacheDirectory: true } }],
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
+      },
     ],
   },
-  resolve: { extensions },
   optimization: { splitChunks: { name: 'vendor', chunks: 'initial' } },
   plugins: [
     new CleanWebpackPlugin(),

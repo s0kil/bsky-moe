@@ -1,0 +1,9 @@
+{
+  "name": "bsky-moe",
+  "bsc-flags": ["-bs-super-errors", "-bs-no-version-header"],
+  "reason": { "react-jsx": 3 },
+  "refmt": 3,
+  "package-specs": { "module": "es6", "in-source": false },
+  "sources": { "dir": "src", "subdirs": true },
+  "bs-dependencies": ["reason-react", "bs-css"]
+}

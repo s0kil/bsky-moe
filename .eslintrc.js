@@ -1,10 +1,7 @@
 const { extensions } = require('./constants')
 
-const OFF = 0
-const ERROR = 2
-
 module.exports = {
-  env: { browser: true, node: true },
+  env: { node: true },
   parser: '@typescript-eslint/parser',
   parserOptions: { ecmaVersion: 2020, sourceType: 'module' },
   extends: [
@@ -14,21 +11,11 @@ module.exports = {
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
-    'plugin:react/recommended',
-    'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
   ],
-  plugins: ['@typescript-eslint', 'emotion'],
-  rules: {
-    'react/prop-types': OFF,
-    'emotion/jsx-import': ERROR,
-    'emotion/no-vanilla': ERROR,
-    'emotion/import-from-emotion': ERROR,
-    'emotion/styled-import': ERROR,
-  },
+  plugins: ['@typescript-eslint'],
   settings: {
-    react: { version: 'detect' },
     'import/extensions': extensions,
     'import/resolver': { node: { extensions } },
   },

@@ -1,3 +1,3 @@
-const extensions = ['.js', '.ts', '.tsx']
+const extensions = ['.js', '.ts']
 
 module.exports = { extensions }

@@ -66,5 +66,10 @@ typings/
 # next.js build output
 .next
 
+# Reason stuff
+.merlin
+.bsb.lock
+lib
+
 # Build output
 dist
