@@ -1,4 +1,5 @@
 {
+  "name": "bsky-moe",
   "private": true,
   "scripts": {
     "size": "bundlesize --config bundlesize.config.json",
