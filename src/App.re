@@ -15,7 +15,7 @@
  */
 
 %raw
-"require('normalize.css')";
+"require('modern-css-reset')";
 
 Css.(
   global(
