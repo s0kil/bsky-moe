@@ -42,12 +42,12 @@ let make = () => {
         src="https://www.gravatar.com/avatar/77ba9b23d10139187d11b3795c7a9164?s=256"
       />
     </Flex>
-    <Heading bold=true center=true> {ReasonReact.string("BSKY")} </Heading>
+    <Heading bold=true center=true> {React.string("BSKY")} </Heading>
     <Flex center=true>
       <Biography>
         <Padding center=true>
           {
-            ReasonReact.string(
+            React.string(
               "A young self-taught software engineer with "
               ++ Js.Float.toString(currentYear -. 2017.0)
               ++ "+ years of industry experience and as a hidden fact, I'm a
@@ -69,11 +69,11 @@ let make = () => {
     </Flex>
     <Box>
       <Padding center=true>
-        {ReasonReact.string("This website is licensed under the ")}
+        {React.string("This website is licensed under the ")}
         <Link href="https://github.com/imbsky/bsky-moe/blob/master/LICENSE">
-          {ReasonReact.string("Apache License 2.0")}
+          {React.string("Apache License 2.0")}
         </Link>
-        {ReasonReact.string(".")}
+        {React.string(".")}
       </Padding>
     </Box>
   </Container>;
