@@ -1,3 +1,4 @@
+import ClosurePlugin from 'closure-webpack-plugin'
 import TerserPlugin from 'terser-webpack-plugin'
 import webpack from 'webpack'
 import merge from 'webpack-merge'
@@ -7,6 +8,7 @@ const config: webpack.Configuration = merge(common, {
   mode: 'production',
   optimization: {
     minimizer: [
+      new ClosurePlugin({ mode: 'STANDARD' }),
       new TerserPlugin({ cache: true, parallel: true, extractComments: true }),
     ],
   },
