@@ -17,10 +17,10 @@
 module Styles = {
   open Css;
 
-  let padding = (~center) =>
+  let paragraph = (~center) =>
     style([textAlign(center ? `center : `initial), margin(px(0))]);
 };
 
 [@react.component]
 let make = (~center, ~children) =>
-  <p className={Styles.padding(~center)}> children </p>;
+  <p className={Styles.paragraph(~center)}> children </p>;

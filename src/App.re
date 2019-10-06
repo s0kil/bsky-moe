@@ -32,9 +32,7 @@ Css.(
 );
 
 [@react.component]
-let make = () => {
-  let currentYear = Js.Date.getFullYear(Js.Date.make());
-
+let make = () =>
   <Container>
     <Flex center=true>
       <Avatar
@@ -45,36 +43,18 @@ let make = () => {
     <Heading bold=true center=true> {React.string("BSKY")} </Heading>
     <Flex center=true>
       <Biography>
-        <Padding center=true>
-          {
-            React.string(
-              "A young self-taught software engineer with "
-              ++ Js.Float.toString(currentYear -. 2017.0)
-              ++ "+ years of industry experience and as a hidden fact, I'm a
-            motorsports enthusiast. I'm acting like an architect to keep the
-            code maintainable. but I maintain a healthy balance between
-            perfectionism and actually getting stuff done. In other words,
-            I focus on results over process. I have a cursory knowledge of
-            functional programming paradigms, runtime performance optimizations,
-            improving development experience with the modern tooling, and
-            refactoring code into modules, etc. I also have "
-              ++ Js.Float.toString(currentYear -. 2014.0)
-              ++ "+ years of experience in video and music production, so I'm a
-            little bit knowledgeable in that field, too. If you have any
-            questions, please email me at any time.",
-            )
-          }
-        </Padding>
+        <Paragraph center=true>
+          {React.string("Nothing to see here.")}
+        </Paragraph>
       </Biography>
     </Flex>
     <Box>
-      <Padding center=true>
+      <Paragraph center=true>
         {React.string("This website is licensed under the ")}
         <Link href="https://github.com/imbsky/bsky-moe/blob/master/LICENSE">
           {React.string("Apache License 2.0")}
         </Link>
         {React.string(".")}
-      </Padding>
+      </Paragraph>
     </Box>
   </Container>;
-};
