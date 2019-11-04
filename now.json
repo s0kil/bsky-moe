@@ -1,6 +1,7 @@
 {
   "name": "bsky-moe",
   "version": 2,
+  "alias": ["bsky.moe"],
   "builds": [{ "src": "package.json", "use": "@now/static-build" }],
   "regions": ["hnd1"],
   "github": { "silent": true }
