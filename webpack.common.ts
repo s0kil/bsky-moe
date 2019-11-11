@@ -43,6 +43,15 @@ const config: webpack.Configuration = {
     new ScriptExtHtmlWebpackPlugin({ defaultAttribute: 'async' }),
     new WebpackBar(),
   ],
+  node: {
+    console: false,
+    global: false,
+    process: false,
+    __filename: false,
+    __dirname: false,
+    Buffer: false,
+    setImmediate: false,
+  },
 }
 
 export default config
