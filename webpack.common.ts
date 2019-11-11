@@ -29,6 +29,13 @@ const config: webpack.Configuration = {
       },
     ],
   },
+  resolve: {
+    alias: {
+      react: 'preact/compat',
+      'react-dom/test-utils': 'preact/test-utils',
+      'react-dom': 'preact/compat',
+    },
+  },
   optimization: { splitChunks: { name: 'vendor', chunks: 'initial' } },
   plugins: [
     new CleanWebpackPlugin(),

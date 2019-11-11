@@ -1,14 +1,5 @@
-const presets = [
-  [
-    '@babel/preset-env',
-    {
-      useBuiltIns: 'usage',
-      corejs: 3,
-      loose: true,
-      targets: { esmodules: true },
-    },
-  ],
-  '@babel/preset-react',
-]
+const presets = ['@babel/preset-env']
 
-module.exports = { presets }
+const plugins = [['@babel/plugin-transform-react-jsx', { pragma: 'h' }]]
+
+module.exports = { presets, plugins }
