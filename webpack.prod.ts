@@ -1,8 +1,8 @@
-import ClosurePlugin from 'closure-webpack-plugin'
-import TerserPlugin from 'terser-webpack-plugin'
-import webpack from 'webpack'
-import merge from 'webpack-merge'
-import common from './webpack.common'
+import ClosurePlugin from 'closure-webpack-plugin';
+import TerserPlugin from 'terser-webpack-plugin';
+import webpack from 'webpack';
+import merge from 'webpack-merge';
+import common from './webpack.common';
 
 const config: webpack.Configuration = merge(common, {
   mode: 'production',
@@ -18,6 +18,6 @@ const config: webpack.Configuration = merge(common, {
     ],
   },
   stats: 'errors-only',
-})
+});
 
-export default config
+export default config;

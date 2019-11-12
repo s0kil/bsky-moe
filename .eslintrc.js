@@ -1,4 +1,4 @@
-const { extensions } = require('./constants')
+const { extensions } = require('./constants');
 
 module.exports = {
   env: { node: true },
@@ -19,4 +19,4 @@ module.exports = {
     'import/extensions': extensions,
     'import/resolver': { node: { extensions } },
   },
-}
+};

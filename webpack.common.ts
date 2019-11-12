@@ -1,9 +1,9 @@
-import { CleanWebpackPlugin } from 'clean-webpack-plugin'
-import HtmlWebPackPlugin from 'html-webpack-plugin'
-import { resolve } from 'path'
-import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin'
-import webpack from 'webpack'
-import WebpackBar from 'webpackbar'
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import HtmlWebPackPlugin from 'html-webpack-plugin';
+import { resolve } from 'path';
+import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin';
+import webpack from 'webpack';
+import WebpackBar from 'webpackbar';
 
 const config: webpack.Configuration = {
   entry: './lib/es6/src/Index.js',
@@ -46,6 +46,6 @@ const config: webpack.Configuration = {
     Buffer: false,
     setImmediate: false,
   },
-}
+};
 
-export default config
+export default config;
