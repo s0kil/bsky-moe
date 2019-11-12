@@ -17,7 +17,7 @@
     "build": "npm-run-all -s bsb:clean bsb:build webpack:build"
   },
   "dependencies": {
-    "bs-css": "10.0.1",
+    "bs-css": "11.0.0",
     "modern-css-reset": "1.0.4",
     "preact": "10.0.5",
     "reason-react": "0.7.0"
