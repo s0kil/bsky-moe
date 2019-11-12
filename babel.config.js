@@ -1,4 +1,4 @@
-const presets = ['@babel/preset-env']
+const presets = [['@babel/preset-modules', { loose: true }]]
 
 const plugins = [['@babel/plugin-transform-react-jsx', { pragma: 'h' }]]
 

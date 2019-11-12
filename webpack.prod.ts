@@ -9,7 +9,12 @@ const config: webpack.Configuration = merge(common, {
   optimization: {
     minimizer: [
       new ClosurePlugin({ mode: 'STANDARD' }),
-      new TerserPlugin({ cache: true, parallel: true, extractComments: true }),
+      new TerserPlugin({
+        cache: true,
+        parallel: true,
+        extractComments: true,
+        terserOptions: { ecma: 8, safari10: true },
+      }),
     ],
   },
   stats: 'errors-only',
