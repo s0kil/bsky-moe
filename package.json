@@ -2,7 +2,7 @@
   "name": "bsky-moe",
   "private": true,
   "scripts": {
-    "size": "bundlesize --config bundlesize.config.js",
+    "size": "bundlesize --config bundlesize.config.json",
     "lint:js": "eslint '**/*.{js,ts}' --cache",
     "lint": "npm-run-all -p lint:*",
     "prettier:ci": "prettier --check '**/*.{html,js,ts,json,md,yml}'",

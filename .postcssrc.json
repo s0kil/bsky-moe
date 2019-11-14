@@ -1,0 +1,13 @@
+{
+  "plugins": {
+    "autoprefixer": {},
+    "cssnano": {
+      "preset": [
+        "default",
+        {
+          "autoprefixer": false
+        }
+      ]
+    }
+  }
+}

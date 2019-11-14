@@ -1,0 +1,8 @@
+{
+  "files": [
+    {
+      "path": "dist/*.js",
+      "compression": "none"
+    }
+  ]
+}
