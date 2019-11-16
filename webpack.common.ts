@@ -46,7 +46,7 @@ const config: webpack.Configuration = {
     __filename: false,
     Buffer: false,
     console: false,
-    crypto: "empty",
+    crypto: false,
     global: false,
     process: false,
     setImmediate: false
