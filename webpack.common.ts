@@ -16,51 +16,25 @@ const config: webpack.Configuration = {
     rules: [
       {
         test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader",
-            options: { minimize: true }
-          }
-        ]
+        use: [{ loader: "html-loader", options: { minimize: true } }]
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: "babel-loader",
-            options: { cacheDirectory: true }
-          }
-        ]
+        use: [{ loader: "babel-loader", options: { cacheDirectory: true } }]
       },
       {
         test: /\.css$/,
         use: [
-          {
-            loader: "style-loader"
-          },
-          {
-            loader: "css-loader"
-          },
-          {
-            loader: "postcss-loader"
-          }
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          { loader: "postcss-loader" }
         ]
       }
     ]
   },
-  resolve: {
-    alias: {
-      react: "preact/compat",
-      "react-dom": "preact/compat"
-    }
-  },
-  optimization: {
-    splitChunks: {
-      name: "vendor",
-      chunks: "initial"
-    }
-  },
+  resolve: { alias: { react: "preact/compat", "react-dom": "preact/compat" } },
+  optimization: { splitChunks: { name: "vendor", chunks: "initial" } },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({ template: "static/index.html" }),
@@ -68,12 +42,13 @@ const config: webpack.Configuration = {
     new WebpackBar()
   ],
   node: {
+    __dirname: false,
+    __filename: false,
+    Buffer: false,
     console: false,
+    crypto: "empty",
     global: false,
     process: false,
-    __filename: false,
-    __dirname: false,
-    Buffer: false,
     setImmediate: false
   }
 };
