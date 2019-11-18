@@ -33,7 +33,7 @@
     "@types/webpack-dev-server": "3.4.0",
     "@types/webpack-merge": "4.1.5",
     "@types/webpackbar": "2.6.0",
-    "@typescript-eslint/eslint-plugin": "2.7.0",
+    "@typescript-eslint/eslint-plugin": "2.8.0",
     "@typescript-eslint/parser": "2.8.0",
     "autoprefixer": "9.7.1",
     "babel-loader": "8.0.6",
