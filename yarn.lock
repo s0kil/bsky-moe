@@ -152,10 +152,10 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-syntax-jsx" "^7.2.0"
 
-"@babel/preset-modules@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@babel/preset-modules/-/preset-modules-0.1.0.tgz#bbf47ed5530f8d663f0eb1c592864964b7cdaead"
-  integrity sha512-6t3sNgGW4AhaR71sfXCVUq/4BlWDn1QhRbECD6CMPkMPxUhj66d1ss7xllftdi4WnrJWJ1RD3jDQnEqMcAFd5g==
+"@babel/preset-modules@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@babel/preset-modules/-/preset-modules-0.1.1.tgz#add61473e3182771b36930c1312f3c56c114e406"
+  integrity sha512-x/kt2aAZlgcFnP3P851fkkb2s4FmTiyGic58pkWMaRK9Am3u9KkH1ttHGjwlsKu7/TVJsLEBXZnjUxqsid3tww==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-proposal-unicode-property-regex" "^7.4.4"
