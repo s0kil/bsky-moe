@@ -5,15 +5,9 @@ lib/
 node_modules/
 
 *.log
-*.pid
-*.pid.lock
-*.seed
 .DS_Store
 .bsb.lock
 .eslintcache
 .merlin
-logs
-npm-debug.log*
-pids
 yarn-debug.log*
 yarn-error.log*
