@@ -8,17 +8,12 @@ const config: webpack.Configuration = merge(common, {
   mode: "production",
   optimization: {
     minimizer: [
-      new ClosurePlugin({
-        mode: "STANDARD"
-      }),
+      new ClosurePlugin({ mode: "STANDARD" }),
       new TerserPlugin({
         cache: true,
         parallel: true,
         extractComments: true,
-        terserOptions: {
-          ecma: 8,
-          safari10: true
-        }
+        terserOptions: { ecma: 8, safari10: true }
       })
     ]
   },
