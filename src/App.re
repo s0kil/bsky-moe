@@ -32,29 +32,4 @@ Css.(
 );
 
 [@react.component]
-let make = () =>
-  <Container>
-    <Flex center=true>
-      <Avatar
-        link="https://github.com/imbsky"
-        src="https://www.gravatar.com/avatar/77ba9b23d10139187d11b3795c7a9164?s=256"
-      />
-    </Flex>
-    <Heading bold=true center=true> {React.string("BSKY")} </Heading>
-    <Flex center=true>
-      <Biography>
-        <Paragraph center=true>
-          {React.string("Nothing to see here.")}
-        </Paragraph>
-      </Biography>
-    </Flex>
-    <Box>
-      <Paragraph center=true>
-        {React.string("This website is licensed under the ")}
-        <Link href="https://github.com/imbsky/bsky-moe/blob/master/LICENSE">
-          {React.string("Apache License 2.0")}
-        </Link>
-        {React.string(".")}
-      </Paragraph>
-    </Box>
-  </Container>;
+let make = () => <About />;
