@@ -4,7 +4,7 @@ import common from "./webpack.common";
 
 const config: webpack.Configuration = merge(common, {
   mode: "development",
-  devServer: { port: 3000, stats: "errors-only" },
+  devServer: { port: 3000, stats: "errors-only", historyApiFallback: true },
   devtool: "inline-source-map"
 });
 
