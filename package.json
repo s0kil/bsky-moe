@@ -37,7 +37,7 @@
     "@typescript-eslint/parser": "2.10.0",
     "autoprefixer": "9.7.3",
     "babel-loader": "8.0.6",
-    "bs-platform": "7.0.0",
+    "bs-platform": "7.0.1",
     "bundlesize": "0.18.0",
     "clean-webpack-plugin": "3.0.0",
     "closure-webpack-plugin": "2.0.1",
