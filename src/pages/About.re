@@ -17,7 +17,7 @@
 module Styles = {
   open Css;
 
-  let parent =
+  let wrapper =
     style([
       display(`flex),
       justifyContent(`center),
@@ -25,15 +25,15 @@ module Styles = {
       height(`vh(100.0)),
     ]);
 
-  let child = style([maxWidth(px(840)), padding(`rem(2.5))]);
+  let container = style([maxWidth(px(840)), padding(`rem(2.5))]);
 
   let title = style([paddingBottom(`rem(2.0))]);
 };
 
 [@react.component]
 let make = () =>
-  <div className=Styles.parent>
-    <div className=Styles.child>
+  <div className=Styles.wrapper>
+    <div className=Styles.container>
       <h1 className=Styles.title> {React.string("About")} </h1>
       <p>
         "I am a Japanese software engineer. I was born in Hyogo Prefecture in 2001
