@@ -36,13 +36,8 @@ let make = () =>
     <div className=Styles.container>
       <h1 className=Styles.title> {React.string("About")} </h1>
       <p>
-        "I am a Japanese software engineer. I was born in Hyogo Prefecture in 2001
-       and now live in either Hyogo Prefecture or Tokyo. Recently I most
-       commonly work with client applications (desktop and mobile), but I'm also
-       a little used to back-end and infrastructure technologies as well. The
-       languages and technologies I most frequently use include ReasonML/OCaml
-       and TypeScript. I like clean, minimalistic code and languages that allow
-       writing it."
+        "I am a hacker primarily working with OCaml. In my spare time,
+         I am not only a hacker, but also a racing driver."
         ->React.string
       </p>
     </div>
