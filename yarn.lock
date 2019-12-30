@@ -1671,10 +1671,10 @@ cloneable-readable@^1.0.0:
     process-nextick-args "^2.0.0"
     readable-stream "^2.3.5"
 
-closure-webpack-plugin@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/closure-webpack-plugin/-/closure-webpack-plugin-2.2.0.tgz#dc1017b02e9e1733282cf398caf70e312e31324c"
-  integrity sha512-urngxqF8pxJSD/2jZ1oy4UJqr3bkCYTa6o3fOe+hb5Tp3y/NnNyCWU34NH3R9kZ3xkbykXotSv+O7gnPmLU9eA==
+closure-webpack-plugin@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/closure-webpack-plugin/-/closure-webpack-plugin-2.2.1.tgz#0eb0eb61760f6e6fd62bea01ada3a53f9a34c6d2"
+  integrity sha512-h3L47JlBERLfxX9RgXtjG/Zi6mGeVzdtZAWbahGYB15WtW2YeqoAA6RU3JefJ6Jt8M+eVZq3oEtr7+gCINTo1Q==
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"
