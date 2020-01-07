@@ -17,7 +17,7 @@
     "build": "npm-run-all -s bsb:clean bsb:build webpack:build"
   },
   "engines": {
-    "node": "13.x"
+    "node": "12.x"
   },
   "dependencies": {
     "bs-css": "11.0.0",
