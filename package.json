@@ -38,7 +38,7 @@
     "@types/webpackbar": "2.6.0",
     "@typescript-eslint/eslint-plugin": "2.16.0",
     "@typescript-eslint/parser": "2.16.0",
-    "autoprefixer": "9.7.3",
+    "autoprefixer": "9.7.4",
     "babel-loader": "8.0.6",
     "bs-platform": "7.0.1",
     "bundlesize": "0.18.0",
