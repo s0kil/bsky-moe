@@ -34,9 +34,9 @@ module Styles = {
 
 [@react.component]
 let make = () =>
-  <div className=Styles.wrapper>
-    <div className=Styles.container>
-      <h1 className=Styles.title> "About"->React.string </h1>
+  <div style=Styles.wrapper>
+    <div style=Styles.container>
+      <h1 style=Styles.title> "About"->React.string </h1>
       <p>
         "I am a hacker primarily working with OCaml. In my spare time, I am not
         only a hacker, but also a racing driver. My bandwidth is currently

@@ -20,7 +20,7 @@
     "node": "12.x"
   },
   "dependencies": {
-    "bs-css": "11.0.0",
+    "bs-css-dom": "1.0.1",
     "modern-css-reset": "1.1.0",
     "preact": "10.3.3",
     "reason-react": "0.7.0"

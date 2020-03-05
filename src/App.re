@@ -24,8 +24,10 @@ Css.(
     "body",
     [
       fontFamily(
-        "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,Ubuntu,
-        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+        `custom(
+          "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,Ubuntu,
+           Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+        ),
       ),
       unsafe("-webkit-font-smoothing", "antialiased"),
       unsafe("-moz-osx-font-smoothing", "grayscale"),

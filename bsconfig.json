@@ -5,5 +5,5 @@
   "refmt": 3,
   "package-specs": { "module": "es6", "in-source": false },
   "sources": { "dir": "src", "subdirs": true },
-  "bs-dependencies": ["reason-react", "bs-css"]
+  "bs-dependencies": ["reason-react", "bs-css", "bs-css-dom"]
 }
