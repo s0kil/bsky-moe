@@ -19,21 +19,5 @@
 %raw
 "require('modern-css-reset')";
 
-Css.(
-  global(
-    "body",
-    [
-      fontFamily(
-        `custom(
-          "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,Ubuntu,
-           Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-        ),
-      ),
-      unsafe("-webkit-font-smoothing", "antialiased"),
-      unsafe("-moz-osx-font-smoothing", "grayscale"),
-    ],
-  )
-);
-
 [@react.component]
 let make = () => <About />;

@@ -19,6 +19,16 @@
 module Styles = {
   open Css;
 
+  let base = [
+    fontFamily(`systemUi),
+    unsafe("-webkit-font-smoothing", "antialiased"),
+    unsafe("-moz-osx-font-smoothing", "grayscale"),
+  ];
+
+  let title = [base, [paddingBottom(`rem(2.0))]]->List.concat->Css.style;
+
+  let body = [base]->List.concat->Css.style;
+
   let wrapper =
     style([
       display(`flex),
@@ -28,8 +38,6 @@ module Styles = {
     ]);
 
   let container = style([maxWidth(px(840)), padding(`rem(2.5))]);
-
-  let title = style([paddingBottom(`rem(2.0))]);
 };
 
 [@react.component]
@@ -37,7 +45,7 @@ let make = () =>
   <div style=Styles.wrapper>
     <div style=Styles.container>
       <h1 style=Styles.title> "About"->React.string </h1>
-      <p>
+      <p style=Styles.body>
         "I am a hacker primarily working with OCaml. In my spare time, I am not
         only a hacker, but also a racing driver. My bandwidth is currently
         somewhat constrained, and I am not available even on small projects.
