@@ -16,9 +16,6 @@
     "dev": "npm-run-all -p *:dev",
     "build": "npm-run-all -s bsb:clean bsb:build webpack:build"
   },
-  "engines": {
-    "node": "12.x"
-  },
   "dependencies": {
     "bs-css-dom": "1.0.1",
     "modern-css-reset": "1.1.0",
