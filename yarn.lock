@@ -1268,17 +1268,17 @@ browserslist@^4.0.0, browserslist@^4.8.3:
     electron-to-chromium "^1.3.363"
     node-releases "^1.1.50"
 
-bs-css-dom@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/bs-css-dom/-/bs-css-dom-1.0.1.tgz#2ee046f05a628c5c20f8ce75cc47b82128a0a318"
-  integrity sha512-omYzo+nVlDqxN2Rseo9NE7mMDchmp28BuPfH8AtL/4W03Oei9HCTr6TmxKzdXnp0QueU7sofpBMQhjQPd5sP8Q==
+bs-css-dom@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/bs-css-dom/-/bs-css-dom-1.1.0.tgz#299fed389d9245f3087080b545dd84e9c375d1fa"
+  integrity sha512-DT8QURHBxuJRNxOwhNmtcLFTyoePgWE4NaPFKhKJN4BKfJ0LyS1M+TISrUK4b/UI0fJg7Df6JaXkGsO1jfmMyw==
   dependencies:
-    bs-css "12.0.1"
+    bs-css "12.1.0"
 
-bs-css@12.0.1:
-  version "12.0.1"
-  resolved "https://registry.yarnpkg.com/bs-css/-/bs-css-12.0.1.tgz#6ff1159f3b708784a8f71e0ba791191a7cda21ba"
-  integrity sha512-kzmLxEptpsE8spP8VSUsTX2wKRd/i9VI8ygBb9QnWj51x0eXNpnk96z1q6/iMgu9FuS3MY2Nb5o6XURG2PsHxg==
+bs-css@12.1.0:
+  version "12.1.0"
+  resolved "https://registry.yarnpkg.com/bs-css/-/bs-css-12.1.0.tgz#8bea8970d31cd133bb81e2aeb78b187a807d003c"
+  integrity sha512-cKxVoPe1PtVTYAUYp81lleRwawd/OhdgDINx8V1/AOUuHkan6g23Jh6b+WACJXrOn4vVJmSgVdBfMqaeHMoi8g==
 
 bs-platform@7.2.2:
   version "7.2.2"
