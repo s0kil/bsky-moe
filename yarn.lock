@@ -1291,17 +1291,17 @@ browserslist@^4.0.0, browserslist@^4.11.1:
     node-releases "^1.1.53"
     pkg-up "^2.0.0"
 
-bs-css-dom@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/bs-css-dom/-/bs-css-dom-1.1.0.tgz#299fed389d9245f3087080b545dd84e9c375d1fa"
-  integrity sha512-DT8QURHBxuJRNxOwhNmtcLFTyoePgWE4NaPFKhKJN4BKfJ0LyS1M+TISrUK4b/UI0fJg7Df6JaXkGsO1jfmMyw==
+bs-css-dom@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/bs-css-dom/-/bs-css-dom-1.2.0.tgz#be55543805bc36ef3f165de08e2b5ee3f9a57ee0"
+  integrity sha512-zHJfwnFxSkifmvtPfz4Zw4h/GRfVd0s7xs4vAwx9CicLCloVoOVjJZjtJGSBse7hzJ1mRLJieDknKfFKuMOxog==
   dependencies:
-    bs-css "12.1.0"
+    bs-css "12.2.0"
 
-bs-css@12.1.0:
-  version "12.1.0"
-  resolved "https://registry.yarnpkg.com/bs-css/-/bs-css-12.1.0.tgz#8bea8970d31cd133bb81e2aeb78b187a807d003c"
-  integrity sha512-cKxVoPe1PtVTYAUYp81lleRwawd/OhdgDINx8V1/AOUuHkan6g23Jh6b+WACJXrOn4vVJmSgVdBfMqaeHMoi8g==
+bs-css@12.2.0:
+  version "12.2.0"
+  resolved "https://registry.yarnpkg.com/bs-css/-/bs-css-12.2.0.tgz#926e758d7f95c02f516505ecdcd855e1d9dcb2a0"
+  integrity sha512-JDaJAc8XKYZA05G8xVuDhB184yGKgNajdUloPC+OK+J8gGTnv8pfrhWKsFFKry87eJN4kKHhgsbXaN5U70g+3Q==
 
 bs-platform@7.3.1:
   version "7.3.1"
