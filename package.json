@@ -20,7 +20,7 @@
     "bs-css-dom": "1.2.0",
     "modern-css-reset": "1.1.0",
     "preact": "10.4.1",
-    "reason-react": "0.7.1"
+    "reason-react": "0.8.0"
   },
   "devDependencies": {
     "@babel/core": "7.9.6",
